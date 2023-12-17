@@ -1,4 +1,4 @@
-# Workstation
+# Workstation setup
 This is for remembering how to set up my environment
 
 Get mac with bash
