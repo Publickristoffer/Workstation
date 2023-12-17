@@ -13,6 +13,7 @@ copilot
 .inputrc
 .ssh
 codewhisperer
+shellcheck
 ```
 
 # git
