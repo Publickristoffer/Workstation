@@ -10,6 +10,9 @@ aws-sso
 gh
 iterm2
 copilot
+.bash_profile
+.inputrc
+.ssh
 
 
 # git
