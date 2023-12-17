@@ -1,7 +1,9 @@
 # Workstation setup
 This is for remembering how to set up my environment
 
-brew (iproute2mac, font-hack-nerd-font, wireshark, orbstack, nmap, aws-cli, aws-sso-cli, jq, ipcalc, wget, yq)
+`brew (iproute2mac, font-hack-nerd-font, wireshark, orbstack, nmap, aws-cli, aws-sso-cli, jq, ipcalc, wget, yq)`
+
+```
 lunarvim
 aws-sso
 gh
@@ -11,7 +13,7 @@ copilot
 .inputrc
 .ssh
 codewhisperer
-
+```
 
 # git
 This is using secure enclave to enable signed commits and ssh authentication
