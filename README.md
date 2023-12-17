@@ -1,9 +1,6 @@
 # Workstation setup
 This is for remembering how to set up my environment
 
-Get mac with bash
-
-
 brew (iproute2mac, font-hack-nerd-font, wireshark, orbstack, nmap, aws-cli, aws-sso-cli, jq, ipcalc, wget, yq)
 lunarvim
 aws-sso
