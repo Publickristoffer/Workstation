@@ -13,6 +13,7 @@ copilot
 .bash_profile
 .inputrc
 .ssh
+codewhisperer
 
 
 # git
