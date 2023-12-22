@@ -116,3 +116,7 @@ vim.cmd([[let g:terraform_align=1]])
 ```
 
 Now, ```:LspInfo``` should show show both terraformls and tflint
+
+Install github copilot for cli
+```gh extensions install github/gh-copilot```
+
