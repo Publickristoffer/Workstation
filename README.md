@@ -1,17 +1,18 @@
 # Workstation setup
 This is for remembering how to set up my environment
 
-`brew (iproute2mac, font-hack-nerd-font, wireshark, orbstack, nmap, aws-cli, aws-sso-cli, jq, ipcalc, wget, yq)`
+`brew install iproute2mac font-hack-nerd-font wireshark orbstack nmap aws-cli aws-sso-cli jq ipcalc wget yq`
 
 ```
+install :
 lunarvim
 aws-sso
 gh
 iterm2
 copilot
-.bash_profile
+.bash_profile <-Kristoffer/Workstation
 .inputrc
-.ssh
+.ssh <- private
 codewhisperer
 shellcheck
 ```
