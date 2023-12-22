@@ -14,7 +14,7 @@ alias terraform='tf'
 alias vim="vim -S ~/.vimrc"
 alias gl="git log --graph --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%an%C(reset)%C(bold yellow)%d%C(reset) %C(dim white)- %s%C(reset)\' --all"
 alias ga='git add .'
-alias gc="git commit -m"auto-commit-$(randwd)""
+alias gc="git commit -m"auto-commit-`randwd`""
 alias gp='git push'
 alias gacp='ga && gc && gp'
 alias ghwatch='gh run watch $(gh run list -L 1 --json databaseId | jq ".[].databaseId")'
