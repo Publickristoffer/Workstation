@@ -14,7 +14,7 @@ alias terraform='tf'
 alias vim="vim -S ~/.vimrc"
 alias gl="git log --graph --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%an%C(reset)%C(bold yellow)%d%C(reset) %C(dim white)- %s%C(reset)\' --all"
 alias ga='git add .'
-alias gc="git commit -m"auto-commit-$(randwd)""
+alias gc='git commit -m"auto-commit-$(randwd)"'
 alias gp='git push'
 alias gacp='ga && gc && gp'
 alias ghwatch='gh run watch $(gh run list -L 1 --json databaseId | jq ".[].databaseId")'
@@ -80,7 +80,7 @@ aws-sso-profile() {
         echo "Unable to assume a role while AWS_PROFILE is set"
         return 1
     fi
-    eval $(/opt/homebrew/bin/aws-sso $_args eval -p "$1")
+    eval '$(/opt/homebrew/bin/aws-sso $_args eval -p "$1")'
     if [ "$AWS_SSO_PROFILE" != "$1" ]; then
         return 1
     fi
@@ -92,7 +92,7 @@ aws-sso-clear() {
         echo "AWS_SSO_PROFILE is not set"
         return 1
     fi
-    eval $(aws-sso eval $_args -c)
+    eval '$(aws-sso eval $_args -c)'
 }
 
 complete -F __aws_sso_profile_complete aws-sso-profile
@@ -188,11 +188,6 @@ tf() {
 
 # This is used for git auto-commit
 randwd() { sed -n $(jot -r 1 1 $(wc -l < /usr/share/dict/web2))p /usr/share/dict/web2 |tr '[:upper:]' '[:lower:]'; }
-
-# ruby stuff for jekyll (for kristoffer.github.io)
-source $(brew --prefix)/opt/chruby/share/chruby/chruby.sh
-source $(brew --prefix)/opt/chruby/share/chruby/auto.sh
-chruby ruby-3.1.3
 
 # CodeWhisperer post block. Keep at the bottom of this file.
 [[ -f "${HOME}/Library/Application Support/codewhisperer/shell/bash_profile.post.bash" ]] && builtin source "${HOME}/Library/Application Support/codewhisperer/shell/bash_profile.post.bash"
