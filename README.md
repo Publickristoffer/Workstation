@@ -2,7 +2,7 @@
 This is for remembering how to set up my environment
 
 ## Brew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 
 `brew install iproute2mac font-hack-nerd-font wireshark orbstack nmap aws-cli aws-sso-cli jq ipcalc wget yq`
 
